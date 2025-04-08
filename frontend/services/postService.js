@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3001/posts";
+const API_URL = "http://localhost:3333/posts";
 const token = JSON.parse(localStorage.getItem("token"));
 
 const postService = {

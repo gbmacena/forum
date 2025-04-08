@@ -51,6 +51,8 @@ const userController = {
     }
   },
   uploadAvatar: async (req, res) => {
+    const { id } = req.params;
+
     try {
       const user = await userService.uploadAvatar(req.params.id, req.file);
       if (!user)
